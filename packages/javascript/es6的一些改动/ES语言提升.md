@@ -2,7 +2,7 @@
 
 ## 严格模式
 
-此为ES5新增语法 
+此为ES5新增语法
 
 参考：https://www.runoob.com/js/js-strict.html
 
@@ -395,7 +395,7 @@ const user = {
   },
   // 属性 age 的描述符
   age: {
-    value: 'monica',
+    value: 17,
     configurable: true, // 该属性的描述符是否可以被重新定义
     enumerable: true, // 该属性是否允许被遍历，会影响for-in循环
     writable: true // 该属性是否允许被修改
