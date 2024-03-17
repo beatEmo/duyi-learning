@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" />
+    <p></p>
+    <script>
+      // 监听 文本框 内容的变化，以防抖的方式输出当前文本框的值
+      const debounce = (fn, time = 1000) => {
+        console.log(333);
+        let timer;
+        return function (...args) {
+          clearTimeout(timer);
+          timer = setTimeout(() => {
+            fn(...args);
+          }, time);
+        };
+      };
+      const input = document.querySelector("input");
+      const p = document.querySelector("p");
+
+      const fn = debounce(() => {
+        p.innerText = input.value;
+      });
+
+      input.addEventListener("input", fn);
+    </script>
+  </body>
+</html>
