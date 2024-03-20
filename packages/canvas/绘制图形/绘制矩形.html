@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <script>
+      // 填充矩形
+      (() => {
+        const canvas = document.createElement("canvas");
+        document.body.appendChild(canvas);
+        canvas.width = 400;
+        canvas.height = 400;
+
+        const ctx = canvas.getContext("2d");
+        ctx.fillRect(100, 100, 200, 100);
+      })();
+      // 描边矩形
+      (() => {
+        const canvas = document.createElement("canvas");
+        document.body.appendChild(canvas);
+        canvas.width = 400;
+        canvas.height = 400;
+
+        const ctx = canvas.getContext("2d");
+        ctx.strokeRect(100, 100, 200, 100);
+      })();
+      // 自定义矩形
+      (() => {
+        const canvas = document.createElement("canvas");
+        document.body.appendChild(canvas);
+        canvas.width = 400;
+        canvas.height = 400;
+
+        const ctx = canvas.getContext("2d");
+        ctx.rect(100, 100, 200, 100);
+        ctx.strokeStyle = "#f00";
+        // ctx.fillStyle = "#00f";
+        ctx.fillStyle = "rgba(255, 0, 0, 0.4)";
+        ctx.lineWidth = 10;
+        ctx.stroke();
+        ctx.fill();
+      })();
+    </script>
+  </body>
+</html>

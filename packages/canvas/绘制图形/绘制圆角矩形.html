@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    canvas {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <script>
+      (() => {
+        const canvas = document.createElement("canvas");
+        document.body.appendChild(canvas);
+        canvas.width = 400;
+        canvas.height = 400;
+
+        const ctx = canvas.getContext("2d");
+        ctx.roundRect(100, 100, 200, 100, 20);
+        ctx.stroke();
+      })();
+
+      (() => {
+        const canvas = document.createElement("canvas");
+        document.body.appendChild(canvas);
+        canvas.width = 400;
+        canvas.height = 400;
+
+        const ctx = canvas.getContext("2d");
+        ctx.roundRect(100, 10, 200, 50, [10]);
+        ctx.stroke();
+
+        ctx.roundRect(100, 70, 200, 50, [10, 20]);
+        ctx.stroke();
+
+        ctx.roundRect(100, 150, 200, 50, [10, 20, 30]);
+        ctx.stroke();
+
+        ctx.roundRect(100, 210, 200, 50, [10, 20, 30, 40]);
+        ctx.stroke();
+      })();
+    </script>
+  </body>
+</html>
