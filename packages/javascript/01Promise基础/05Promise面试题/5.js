@@ -1,0 +1,23 @@
+async function m() {
+  console.log(0);
+  const n = await 1;
+  console.log(n);
+}
+
+(async () => {
+  console.log(m());
+  await m();
+  console.log(2);
+})();
+
+console.log(3);
+
+/*
+0
+pending
+0
+3
+1
+1
+2
+*/
