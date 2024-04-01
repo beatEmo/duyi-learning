@@ -14,3 +14,10 @@ new Promise((resolve, reject) => {
   resolve(2);
   console.log("任务结束");
 });
+
+/***
+ * 任务开始
+ * 任务结束
+ * 任务开始
+ * 任务结束
+ */

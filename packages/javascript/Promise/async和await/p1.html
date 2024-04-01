@@ -1,8 +1,3 @@
-<style>
-  ul {
-    height: auto;
-  }
-</style>
 <ul id="heroList"></ul>
 
 <script>
@@ -16,17 +11,9 @@
   }
   // 利用getHeroes方法，获取所有的英雄数据，将英雄名称显示到页面的列表中
   (async () => {
-    const ul = document.querySelector("#heroList");
-    let li = "";
-    try {
-      const data = await getHeroes();
-      for (const name of data) {
-        li += `<li>${name.cname}</li>`;
-      }
-      ul.innerHTML = li;
-      console.log(data);
-    } catch (reply) {
-      console.log(reply);
-    }
+    const resp = await getHeroes();
+    console.log(resp);
+    const html = resp.map((resp) => `<li>${resp.cname}</li>`).join();
+    document.getElementById("heroList").innerHTML = html;
   })();
 </script>

@@ -1,10 +1,10 @@
 // 下面代码的输出结果是什么
 
 new Promise((resolve, reject) => {
-  resolve(1);
+  resolve();
 })
   .then((res) => {
-    console.log(res);
+    console.log(res.toString());
     return 2;
   })
   .catch((err) => {
@@ -13,6 +13,3 @@ new Promise((resolve, reject) => {
   .then((res) => {
     console.log(res);
   });
-
-// 1
-// 2

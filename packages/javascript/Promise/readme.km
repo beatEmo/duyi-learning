@@ -1,0 +1,225 @@
+{
+    "root": {
+        "data": {
+            "id": "d08vx8btwbs0",
+            "created": 1711984688156,
+            "text": "promise"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d08vxj9qacg0",
+                    "created": 1711984711974,
+                    "text": "promiseA+规范"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d08w2w87njk0",
+                            "created": 1711985132001,
+                            "text": "所有异步场景都是一个异步任务（promise对象）"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d08w3hnwtn40",
+                            "created": 1711985178663,
+                            "text": "promise对象有俩个阶段和三个状态"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d08w3s0cwvc0",
+                                    "created": 1711985201183,
+                                    "text": "未决阶段、已决阶段"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d08w5sjcq6w0",
+                                            "created": 1711985359060,
+                                            "text": "任务总是从 未决阶段到已决阶段"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d08w4k4nio80",
+                                    "created": 1711985262393,
+                                    "text": "挂起状态、完成状态、失败状态"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d08w63n4eig0",
+                                            "created": 1711985383233,
+                                            "text": "任务总是从挂起状态到完成或失败状态"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d08w6nbdtrk0",
+                            "created": 1711985426059,
+                            "text": "状态变化"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d08w790p7q80",
+                                    "created": 1711985473302,
+                                    "text": "挂起 -> 完成"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d08w7hoxvog0",
+                                            "created": 1711985492182,
+                                            "text": "resolve"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d08w7p10ldc0",
+                                                    "created": 1711985508150,
+                                                    "text": "任务完成有一个数据返回"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "d08w6xtuaqo0",
+                                    "created": 1711985448943,
+                                    "text": "挂起 -> 失败"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d08w73zo3kg0",
+                                            "created": 1711985462356,
+                                            "text": "reject"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d08w7v1esow0",
+                                                    "created": 1711985521234,
+                                                    "text": "任务失败会将原因返回"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "d08w811y7eg0",
+                            "created": 1711985534327,
+                            "text": "任务后续处理"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d08w8478i280",
+                                    "created": 1711985541177,
+                                    "text": "onFiulfilled"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d08w87i7row0",
+                                    "created": 1711985548372,
+                                    "text": "onRejected"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d08wns8fmw80",
+                    "created": 1711986768955,
+                    "text": "promise静态任务"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d08wo06ija80",
+                            "created": 1711986786253,
+                            "text": "resolve"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d08wo9spi280",
+                            "created": 1711986807186,
+                            "text": "reject"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d08wod9pyrc0",
+                            "created": 1711986814745,
+                            "text": "all"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d08woexarew0",
+                            "created": 1711986818348,
+                            "text": "any"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d08woiaop5s0",
+                            "created": 1711986825688,
+                            "text": "allSettled"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "d08wooe3hew0",
+                            "created": 1711986838954,
+                            "text": "race"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d08wnx5qokg0",
+                    "created": 1711986779676,
+                    "text": "topic"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

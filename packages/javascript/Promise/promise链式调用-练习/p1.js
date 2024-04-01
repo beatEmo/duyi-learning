@@ -19,8 +19,3 @@ console.log(pro1, pro2, pro3);
 setTimeout(() => {
   console.log(pro1, pro2, pro3);
 }, 2000);
-
-// Promise { <pending> } Promise { <pending> } Promise { <pending> }
-// 1
-// 2
-// Promise { 1 } Promise { 2 } Promise { undefined }

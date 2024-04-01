@@ -5,7 +5,7 @@ new Promise((resolve, reject) => {
 })
   .then((res) => {
     console.log(res);
-    return new Error("2");
+    return new Error('2');
   })
   .catch((err) => {
     throw err;

@@ -21,21 +21,19 @@
             resp.map((it) => ({ value: it.value, label: it.label }))
           );
       }
+
       // 利用getProvinces函数，将省份数据加载到select元素中
-      getProvinces().then(
-        (data) => {
-          const select = document.querySelector(".selProvince");
-          data.map((item) => {
-            const option = document.createElement("option");
-            option.value = item.value;
-            option.label = item.label;
-            select.appendChild(option);
-          });
-        },
-        (reasion) => {
-          console.log(reasion);
-        }
-      );
+      getProvinces()
+        .then((resp) => {
+          const sel = document.getElementById("selProvince");
+          const html = resp
+            .map((p) => `<option value="${p.value}">${p.label}</option>`)
+            .join("");
+          sel.innerHTML = html;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     </script>
   </body>
 </html>
