@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .box {
-        padding: 40px;
-        background: #fcf0f0;
-        position: fixed;
+      .container {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        border: 2px solid #ccc;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background: #f19752;
+        border: 2px solid #ee772f;
       }
     </style>
     <style>
       /* 在这里完成作业 */
-      .box {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
     </style>
   </head>
   <body>
-    <div class="box">
-      <p>这是一个固定定位的盒子</p>
-      <p>它的宽高是不固定的</p>
-      <p>请将它居中</p>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
     </div>
   </body>
 </html>

@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body {
-        text-align: center;
-        color: #666;
-      }
-      .box {
+      .container {
+        width: 80%;
+        height: 500px;
         margin: 0 auto;
+        border: 2px solid #ccc;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background: #f19752;
+        border: 2px solid #ee772f;
       }
     </style>
     <style>
@@ -19,8 +24,10 @@
     </style>
   </head>
   <body>
-    <div class="box"></div>
-    <p>鼠标移动上去试一试</p>
-    <p>颜色值：#579ef8</p>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item grow"></div>
+      <div class="item"></div>
+    </div>
   </body>
 </html>
